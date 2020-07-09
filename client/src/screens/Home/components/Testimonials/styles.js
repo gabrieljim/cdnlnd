@@ -1,11 +1,13 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
+import { motion } from "framer-motion"
+import * as variants from "./variants";
 
 export const Section = styled.section`
 	padding-top: ${props => props.theme.navHeight}px;
 	padding-bottom: ${props => props.theme.navHeight}px;
 	min-height: 100vh;
 	width: 100%;
-	background: ${props => props.theme.text};
+	background: ${props => props.theme.darkerText};
 	color: ${props => props.theme.dark};
 	display: flex;
 	align-items: center;
@@ -22,7 +24,9 @@ export const Content = styled.div`
 		justify-content: center;
 	}
 `
- export const TitleContainer = styled.div`
+export const TitleContainer = styled(motion.div).attrs(() => ({
+	variants: variants.title
+}))`
 	text-align: left;
 	margin-bottom: 40px;
 
@@ -37,8 +41,11 @@ export const Title = styled.h1`
 
 export const TestimonialsContainer = styled.div`
 	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
 
 	@media screen and (max-width: 800px) {
 		flex-direction: column;
+		align-items: center;
 	}
 `

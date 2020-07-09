@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import { motion } from "framer-motion"
 import * as variants from "./variants";
 
@@ -10,7 +10,7 @@ export const Section = styled.section`
 	background: linear-gradient(
 		45deg,
 		${props => props.theme.dark} 0%,
-		${props => props.theme.background} 100%
+		${props => props.theme.light} 100%
 	);
 	display: flex;
 	align-items: center;

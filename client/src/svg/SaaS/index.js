@@ -1,5 +1,5 @@
 import React from "react";
-import { withTheme } from "styled-components";
+import { withTheme } from "styled-components/macro";
 import { motion } from "framer-motion";
 
 const svgVariants = {

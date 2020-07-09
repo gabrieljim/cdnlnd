@@ -1,7 +1,6 @@
 import React from "react";
 import * as SC from "./styles";
-import * as variants from "./variants";
-import Reveal from "components/Reveal";
+import useReveal from "hooks/useReveal";
 import Testimony from "./components/Testimony";
 
 import data from "./testimonies.json";
@@ -9,18 +8,17 @@ import data from "./testimonies.json";
 const { testimonies } = data;
 
 const Testimonials = () => {
+	const revealProps = useReveal();
 	return (
 		<SC.Section>
 			<SC.Content>
-				<Reveal variants={variants.title}>
-					<SC.TitleContainer>
-						<SC.Title>Testimonials</SC.Title>
-					</SC.TitleContainer>
-				</Reveal>
+				<SC.TitleContainer {...revealProps}>
+					<SC.Title>Testimonials</SC.Title>
+				</SC.TitleContainer>
 				<SC.TestimonialsContainer>
-				{testimonies.map((testimony, id) => (
-					<Testimony testimony={testimony} key={id} />
-				))}
+					{testimonies.map((testimony, id) => (
+						<Testimony testimony={testimony} key={id} />
+					))}
 				</SC.TestimonialsContainer>
 			</SC.Content>
 		</SC.Section>

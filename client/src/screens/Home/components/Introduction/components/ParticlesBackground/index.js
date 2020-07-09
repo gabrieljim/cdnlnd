@@ -1,5 +1,5 @@
 import React from "react";
-import { withTheme } from "styled-components";
+import { withTheme } from "styled-components/macro";
 import Particles from "react-particles-js";
 
 const ParticlesBackground = props => {
