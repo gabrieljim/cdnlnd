@@ -1,21 +1,22 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import { ThemeProvider } from "styled-components";
+import { BrowserRouter as Router } from "react-router-dom";
+import theme from "constants/theme";
+import GlobalStyle from "constants/globalStyle";
 
-const GlobalStyle = createGlobalStyle`
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-`;
+import Navbar from "components/Navbar";
+import MainRouter from "components/MainRouter";
 
 function App() {
 	return (
 		<>
-			<GlobalStyle />
-			<div className="App">
-				Firstttttttttttttttttttttttttttttttttttttttttttt
-			</div>
+			<ThemeProvider theme={theme}>
+				<GlobalStyle />
+				<Navbar />
+				<Router>
+					<MainRouter />
+				</Router>
+			</ThemeProvider>
 		</>
 	);
 }
