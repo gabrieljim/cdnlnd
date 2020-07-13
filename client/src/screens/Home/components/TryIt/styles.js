@@ -69,7 +69,6 @@ export const TryItButton = styled.button`
 		cursor: pointer;
 		background-position: left bottom;
 		color: ${props => props.theme.text};
-		border: 3px solid ${props => props.theme.text};
 	}
 
 	@media screen and (max-width: 800px) {

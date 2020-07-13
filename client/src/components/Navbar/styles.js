@@ -16,6 +16,10 @@ export const Nav = styled(motion.nav).attrs(() => ({
 	padding: 0 100px;
 	color: ${props => props.theme.text};
 	height: ${props => props.theme.navHeight}px;
+
+	@media screen and (max-width: 800px) {
+		padding: 0 40px;
+	}
 `;
 
 export const Title = styled(motion.div).attrs(() => ({

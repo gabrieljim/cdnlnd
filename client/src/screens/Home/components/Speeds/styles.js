@@ -15,17 +15,6 @@ export const Section = styled.section`
 	display: flex;
 	align-items: center;
 	position: relative;
-
-	&:before {
-		content: "";
-		background: ${props => props.theme.darkerText};
-		transform: skewY(2deg);
-    height: 70px;
-    position: absolute;
-    left: 0;
-    top: -25px;
-    right: 0;
-	}
 `;
 
 export const Content = styled.div`

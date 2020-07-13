@@ -10,17 +10,6 @@ export const Section = styled.section`
 	display: flex;
 	align-items: center;
 	position: relative;
-
-	&:before {
-    content: "";
-		background: ${props => props.theme.dark};
-    height: 69px;
-    top: -35px;
-    transform: skewY(-2deg);
-    position: absolute;
-    left: 0;
-    right: 0;
-	}
 `;
 
 export const Content = styled.div`
