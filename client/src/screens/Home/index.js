@@ -1,16 +1,16 @@
 import React from "react";
 import Introduction from "./components/Introduction";
 import Testimonials from "./components/Testimonials";
-import Speeds from "./components/Speeds";
-import TryIt from "./components/TryIt";
+import Perks from "./components/Perks";
+import Pricing from "./components/Pricing";
 
 const Home = () => {
 	return (
 		<>	
 			<Introduction />
 			<Testimonials />
-			<Speeds />
-			<TryIt />
+			<Perks />
+			<Pricing />
 		</>
 	)		
 }

@@ -2,11 +2,12 @@ import React from "react";
 import Reason from "./components/Reason";
 import World from "svg/World";
 import WalkingDude from "svg/WalkingDude";
+import FreshWoman from "svg/FreshWoman";
 import * as SC from "./styles";
 
 const Speeds = () => {
 	return (
-		<SC.Section>
+		<SC.Section id="perks">
 			<SC.Content>
 				<Reason
 					title="Global"
@@ -28,7 +29,8 @@ const Speeds = () => {
 					text={
 						"With little to no management needed after setup, and an easy to use dashboard, CDNLND will make your experience a breeze."
 					}
-					image={World}
+					image={FreshWoman}
+					moveRight
 				/>
 			</SC.Content>
 		</SC.Section>

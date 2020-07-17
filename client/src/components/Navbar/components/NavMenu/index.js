@@ -3,7 +3,7 @@ import * as SC from "./styles";
 
 const NavMenu = props => {
 	return (
-		<SC.MenuIcon />	
+		<SC.MenuIcon onClick={props.toggleMenu}/>	
 	)		
 }
 

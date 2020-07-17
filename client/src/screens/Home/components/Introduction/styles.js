@@ -21,11 +21,12 @@ export const Content = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	z-index: 1;
+	z-index: 0;
 
 	@media screen and (max-width: 800px) {
 		flex-direction: column;
 		justify-content: center;
+		padding: 0 20px;
 	}
 `
 

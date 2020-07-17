@@ -11,7 +11,7 @@ const Introduction = () => {
 			<ParticlesBackground />
 			<SC.Content>
 				<SC.Text>
-					<SC.Title>THE BEST FUCKING CDN BITCH</SC.Title>
+					<SC.Title>Lightning-fast, Cheap, Easy-To-Use</SC.Title>
 					<SC.ButtonContainer>
 						<Button />
 					</SC.ButtonContainer>

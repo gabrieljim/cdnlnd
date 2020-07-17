@@ -1,10 +1,13 @@
 import React from "react";
 import * as SC from "./styles";
 
+import useReveal from "hooks/useReveal"
+
 const Reason = props => {
+	const revealProps = useReveal();
 	return (
-		<SC.ReasonContainer reverse={props.reverse}>	
-			<SC.TextContainer>
+		<SC.ReasonContainer {...revealProps} reverse={props.reverse}>	
+			<SC.TextContainer moveRight={props.moveRight}>
 				<SC.Title>
 					{props.title}
 				</SC.Title>
